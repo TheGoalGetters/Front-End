@@ -1,46 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script defer src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
     <header>
-      <img class="logo" src="goal getter logo.png" alt="logo">
+      <img class="logo" src="goal getter logo.png" alt="logo" />
       <nav>
         <ul class="nav__links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Resources</a></li>
-          <li><a href="#">Help center</a></li>
+          <li><a href="#">Help Center</a></li>
         </ul>
       </nav>
       <a class="cta" href="#"><button class="btn-register">REGISTER</button></a>
       <a class="cta" href="#"><button class="btn-sign">SIGN IN</button></a>
     </header>
-    
-      <div class="login">
-          <div class="content">
-            <img src="login illustration.png" alt="image">
-          </div>
-          <div class="loginform">
-            <h1>Welcome back!</h1>
-            <form action="">
-              <div class="tbox">
-                <p>Username/email</p>
-                <input type="text" name="" placeholder="enter username or email">
-              </div>
-              <div class="tbox">
-                <p>Password</p>
-                <input type="password" name="" placeholder="enter password">
-              </div>
-              <div class="forgot"><p>Forgot Password?</p></div>
-              <button class="btn">LOGIN</button>
-            </form>
-          </div>
+
+    <div class="login">
+      <div class="content">
+        <img src="login illustration.png" alt="image" />
       </div>
-</body>
+      <div class="loginform">
+        <h1>Welcome back!</h1>
+        <form action="">
+          <div class="tbox">
+            <p>Username/email</p>
+            <input type="text" name="" placeholder="enter username or email" />
+          </div>
+          <div class="tbox">
+            <p>Password</p>
+            <input type="password" name="" placeholder="enter password" />
+          </div>
+          <a href="#" class="forgot" id="forgot">Forgot Password?</a>
+          <button class="btn">LOGIN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="bg-modal">
+      <div class="modal-content">
+        <!-- <div class="close">+</div> -->
+
+        <div class="close-button"><button class="close-btn">&times;</button></div>
+        <h1>Forgot your Password?</h1>
+        <p class="modal-header">Enter your Email to get an OTP to reset your password</p>
+
+        <form action="">
+          <p>Email</p>
+          <div class="form-modal">
+          <input type="email" class="modal-input" placeholder="&#xf0e0 Email">
+          </div>
+          <a href="" class=""><button class="btn-otp">SEND OTP</button></a>
+        </form>
+
+      </div>
+    </div>
+  </body>
 </html>
