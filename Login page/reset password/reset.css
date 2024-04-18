@@ -1,6 +1,6 @@
 @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,6 +35,7 @@ header {
 
 .nav__links {
   list-style: none;
+
 }
 
 .nav__links li {
@@ -61,10 +62,10 @@ header {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   display: flex;
-  width: 113px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
+width: 113px;
+height: 40px;
+justify-content: center;
+align-items: center;
 }
 
 .btn-register:hover {
@@ -95,7 +96,7 @@ button:hover {
   opacity: 0.8;
 }
 
-.login {
+.login{
   display: flex;
   column-gap: 50px;
   justify-content: center;
@@ -114,11 +115,11 @@ button:hover {
 }
 
 .content img {
-  width: 400px;
+  width: 580px;
   min-height: 300px;
 }
 .loginform {
-  width: 400px;
+  width: 450px;
   background: transparent;
   padding: 20px 60px;
   font-family: "Inter", sans-serif;
@@ -126,44 +127,56 @@ button:hover {
 }
 .loginform h1 {
   font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 20px;  
 }
-.tbox {
-  width: 100%;
-  height: 40px;
+.loginform p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
   margin-bottom: 50px;
+  /* line-height: 140%; */
 }
-.tbox p {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-.tbox input {
+.tbox{
   width: 100%;
-  height: 50px;
-  background: #f1f1f1;
+  /* height: 40px; */
+  margin-bottom: 20px;
+}
+.tbox p{
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: left;
+  font-style: normal;
+  line-height: normal;
+}
+.tbox input{
+  width: 100%;
   border: none;
   outline: none;
   border-radius: 5px;
-  padding: 16px;
-  align-items: center;
-  align-self: stretch;
-  border-bottom: 27px;
-}
-.forgot {
   display: flex;
-  justify-content: right;
-  margin-bottom: 27px;
+  height: 40px;
+  padding: 0px 16px;
+  font-size: 20px;
+  align-items: center;
+  /* gap: 10px; */
+  align-self: stretch;
+  border-radius: 4px;
+  background: #F1F1F1;
 }
-.forgot:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
+
 .login .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 35px;
+  height: 40px;
   background: #00f;
   border: none;
   outline: none;
@@ -172,94 +185,9 @@ button:hover {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 40px
 }
 
 .login .btn:hover {
   opacity: 0.7;
-}
-
-.bg-modal {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-.modal-content {
-  width: 750px;
-  height: 450px;
-  background-color: white;
-  border-radius: 8px;
-  /* padding: 57px 130px; */
-  text-align: center;
-  /* position: relative; */
-  font-family: "Inter", sans-serif;
-}
-
-.modal-content h1 {
-  margin-bottom: 15px;
-  font-size: 40px;
-}
-
-.modal-header {
-  font-size: 19px;
-  margin-bottom: 40px;
-}
-
-form p {
-  font-size: 19px;
-  margin-bottom: 5px;
-  align-content: flex-start;
-}
-
-.close-button {
-  display: flex;
-  justify-content: right;
-  margin: 15px;
-}
-
-.close-button .close-btn {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 40px;
-}
-
-.modal-input {
-  width: 50%;
-  /* display: block; */
-  display: inline-block;
-    vertical-align: top;
-  margin: auto;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #acacac;
-  outline: none;
-  padding: 16px;
-  font-family: "FontAwesome";
-  font-size: 15px;
-}
-
-.btn-otp{
-  border: none;
-  background-color: #00f;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  width: 60%;
-  border-radius: 8px;
-  height: 50px;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: 16px;
-  display: inline-block;
-  text-align: center;
-  line-height: 25px;
 }
