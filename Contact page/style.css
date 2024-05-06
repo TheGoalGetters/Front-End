@@ -1,0 +1,217 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+li,
+a,
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+  padding: 15px 10%;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  opacity: 0.5;
+}
+
+.btn-contact {
+  border-radius: 8px;
+  border: 1px solid var(--Primary-Blue-blue-500, #00f);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #00f;
+  padding: 10px 20px;
+  background-color: #ffff;
+  display: flex;
+  height: 40px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-contact:hover {
+  opacity: 0.5;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 200px;
+}
+
+.hero-img img{
+  position: relative;
+  max-height: 100vh;
+  width: auto;
+  display: block;
+  z-index: 1;
+  width: 600px;
+  
+}
+
+.form form{
+  display: flex;
+  flex-direction: column; 
+  gap: 14px;
+}
+
+.hero-form h3 {
+  color: var(--Text-text-800, #0F0F0F);
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 56px */
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 6px;
+  width: 400px;
+}
+
+.form-input p {
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.form-input input {
+  display: flex;
+  padding: 13px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: var(--Neutral-Color-neutral-300, #F6F6F6);
+  outline: none;
+  border: none;
+}
+
+.form-input input:focus {
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.form-input input::placeholder {
+  color: var(--Text-text-100, #B9B9B9);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.form-input textarea{
+  display: flex;
+  height: 90px;
+  padding: 8px 16px 16px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: var(--Neutral-Color-neutral-300, #F6F6F6);
+  outline: none;
+  border: none;
+}
+
+.form-input textarea:focus {
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.form-input textarea::placeholder {
+  color: var(--Text-text-100, #B9B9B9);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.form-btn {
+  display: flex;
+  width: 400px;
+  height: 40px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Primary-Blue-blue-500, #00F);
+  color: var(--White, #FFF);
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form-note{
+  display: flex;
+  align-items: center;
+  color: var(--Text-text-100, #B9B9B9);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
